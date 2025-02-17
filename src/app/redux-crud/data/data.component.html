@@ -1,0 +1,29 @@
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Active</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <span *ngIf="isLoading">
+            Loading...
+        </span>
+        <tr *ngFor="let user of componentUsers">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.password}}</td>
+            <td>{{user.active?"Active":"Deactivated"}}</td>
+            <td>
+                <button (click)="handleDelete(user.id)">Remove</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

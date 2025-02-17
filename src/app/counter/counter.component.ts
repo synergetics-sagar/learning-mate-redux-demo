@@ -14,7 +14,7 @@ export class CounterComponent {
 
   constructor(private store: Store<{count: number}>){
     this.store.select("count")
-    .subscribe(mycounter=>this.count=mycounter)
+    .subscribe(mycounter=>console.log(mycounter))
   }
 
   handleIncrement(incBy:number){

@@ -1,0 +1,25 @@
+{
+    "users": [
+        {
+            "id": "1739766612421",
+            "name": "sagar",
+            "email": "sagar@example.com",
+            "password": "123123",
+            "active": false
+        },
+        {
+            "id": "1739766616821",
+            "name": "new",
+            "email": "new@example.com",
+            "password": "123123",
+            "active": false
+        },
+        {
+            "id": "1739766619685",
+            "name": "another",
+            "email": "another@example.com",
+            "password": "123123",
+            "active": false
+        }
+    ]
+}
